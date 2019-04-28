@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		328A02702275DEED001D7D08 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 328A026F2275DEED001D7D08 /* Inceptionv3.mlmodel */; };
 		32B7186F2275D4EB000454A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B7186E2275D4EB000454A5 /* AppDelegate.swift */; };
 		32B718712275D4EB000454A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B718702275D4EB000454A5 /* ViewController.swift */; };
 		32B718742275D4EB000454A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32B718722275D4EB000454A5 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		328A026F2275DEED001D7D08 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
 		32B7186B2275D4EB000454A5 /* realTimeImageRecognition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = realTimeImageRecognition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32B7186E2275D4EB000454A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32B718702275D4EB000454A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 		32B7186D2275D4EB000454A5 /* realTimeImageRecognition */ = {
 			isa = PBXGroup;
 			children = (
+				328A026F2275DEED001D7D08 /* Inceptionv3.mlmodel */,
 				32B7186E2275D4EB000454A5 /* AppDelegate.swift */,
 				32B718702275D4EB000454A5 /* ViewController.swift */,
 				32B718722275D4EB000454A5 /* Main.storyboard */,
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				32B718712275D4EB000454A5 /* ViewController.swift in Sources */,
+				328A02702275DEED001D7D08 /* Inceptionv3.mlmodel in Sources */,
 				32B7186F2275D4EB000454A5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +286,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PV64S2NNCX;
 				INFOPLIST_FILE = realTimeImageRecognition/Info.plist;
@@ -291,6 +296,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = edu.gan123.realTimeImageRecognition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -300,6 +306,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PV64S2NNCX;
 				INFOPLIST_FILE = realTimeImageRecognition/Info.plist;
@@ -309,6 +316,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = edu.gan123.realTimeImageRecognition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
