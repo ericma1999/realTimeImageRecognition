@@ -20,6 +20,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     
     @IBOutlet weak var imageItemName: UILabel!
     
+    @IBOutlet weak var previewView: UIView!
     func prepareCamera() {
         let captureSession = AVCaptureSession()
         captureSession.sessionPreset = .high
@@ -29,8 +30,10 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         captureSession.startRunning()
         
         let previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
-        view.layer.addSublayer(previewLayer)
-        previewLayer.frame = view.frame
+        previewLayer.videoGravity = .resizeAspect
+        previewLayer.frame = previewView.bounds
+        previewLayer.connection?.videoOrientation = .portrait
+        previewView.layer.addSublayer(previewLayer)
         
         let dataOutput = AVCaptureVideoDataOutput()
         dataOutput.setSampleBufferDelegate(self, queue: DispatchQueue(label: "videoQueue"))

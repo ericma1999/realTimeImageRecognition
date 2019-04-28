@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,26 +15,40 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="realTimeImageRecognition" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7IK-AO-I5d">
-                                <rect key="frame" x="186" y="841" width="57" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PXK-8d-zBz">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="749"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7IK-AO-I5d">
+                                <rect key="frame" x="0.0" y="749" width="375" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7IK-AO-I5d" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ENz-oh-EA0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7IK-AO-I5d" secondAttribute="trailing" id="FQb-9P-Fcf"/>
+                            <constraint firstItem="PXK-8d-zBz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="GTa-wh-sy6"/>
+                            <constraint firstItem="PXK-8d-zBz" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="MsN-Sp-Sr7"/>
+                            <constraint firstItem="PXK-8d-zBz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qbe-qx-7zE"/>
+                            <constraint firstItem="7IK-AO-I5d" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ukU-L3-2nK"/>
+                            <constraint firstItem="7IK-AO-I5d" firstAttribute="top" secondItem="PXK-8d-zBz" secondAttribute="bottom" id="xHi-N0-V1X"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="imageItemName" destination="7IK-AO-I5d" id="onG-IQ-Zxv"/>
+                        <outlet property="previewView" destination="PXK-8d-zBz" id="7es-ky-6eW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-58.399999999999999" y="127.83251231527095"/>
         </scene>
     </scenes>
 </document>
